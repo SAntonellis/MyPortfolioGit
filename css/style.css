@@ -6,8 +6,11 @@ body {
 }
 
 :root {
-  --color1: pink;
-  --color2: antiquewhite;
+  --color1: #eacec5;
+  --color2: #eaedf5;
+  --color3: #5e6670;
+  --white: #fdfbfb;
+
 }
 
 body {
@@ -24,19 +27,19 @@ header ul {
 }
 
 li {
-  list-style-type: none; /* this removes the bullet points for li */
+  list-style-type: none; 
   padding: 10px;
   outline: 1px solid black;
 }
-
 
 ul {
   margin: 0;
 }
 
 main {
+  flex: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   outline: 1px solid black;
@@ -44,45 +47,37 @@ main {
 
 .box1 {
   background-color: var(--color2);
-  width: 100%;
+  width: 95%;
   border: 1px black solid;
   margin: 5px;
   padding: 10px;
-}
-
-.content {
-  flex: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  outline: 1px solid black;
 }
 
 .box2 {
   background-color: var(--color2);
-  width: 100%;
+  width: 95%;
   border: 1px black solid;
   margin: 5px;
   padding: 10px;
 }
 
-.contact {
+
+
+.box3 {
   flex: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   outline: 1px solid black;
-}
-
-.box3 {
   background-color: var(--color2);
-  width: 100%;
+  width: 95%;
   border: 1px black solid;
   margin: 5px;
   padding: 10px;
 }
+
+
 
 footer {
   background-color: var(--color1);
@@ -119,6 +114,19 @@ footer {
     align-items: center;
     justify-content: center;
     outline: 1px solid black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content2 {
+    flex: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid black;
+    margin: 0;
+    padding: 0;
   }
 
   .contact {
