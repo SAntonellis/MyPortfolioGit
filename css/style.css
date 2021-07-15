@@ -130,6 +130,14 @@ main {
   padding: 20px;
 }
 
+.column img {
+  border: 1px;
+  padding: 5px;
+  width: 25%;
+  height: 75%;
+  object-fit: contain;
+}
+
 .column2 ul {
   display: flex;
   flex-wrap: wrap;
