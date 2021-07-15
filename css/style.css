@@ -185,7 +185,7 @@ body {
   font-family: Arial;
 }
 
-/* Center website */
+
 .gallery {
   max-width: 500px;
   margin: auto;
@@ -193,44 +193,37 @@ body {
 
 
 
-
 .galleryrow {
   margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .galleryrow,
 .galleryrow > .gallerycolumn {
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
 .gallerycolumn {
   float: left;
   width: 25%;
 }
 
-/* Clear floats after rows */
 .galleryrow:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .gallerycontent {
   background-color: white;
   padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .gallerycolumn {
     width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .gallerycolumn {
     width: 100%;
