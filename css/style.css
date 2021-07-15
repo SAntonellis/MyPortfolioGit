@@ -95,7 +95,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0rem;
+  margin: auto;
   padding: 0.15rem;
   outline-style: solid;
   outline-width: 0.1rem;
@@ -152,11 +152,12 @@ padding: 10px;
 
 footer {
   background-color: var(--color1);
-  margin: 0rem;
   padding: 20px;
   outline-style: solid;
   outline-width: 0.15rem;
   outline-color: var(--color3);
+  width: 100%;
+  margin: auto;
 }
 
 
@@ -170,5 +171,68 @@ footer {
 
   a {
     outline-style: none;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.gallery {
+  max-width: 500px;
+  margin: auto;
+}
+
+
+
+
+.galleryrow {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.galleryrow,
+.galleryrow > .gallerycolumn {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.gallerycolumn {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.galleryrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.gallerycontent {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .gallerycolumn {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallerycolumn {
+    width: 100%;
   }
 }
