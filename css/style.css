@@ -17,7 +17,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin: 0.15rem;
 }
 
 h1,
@@ -50,7 +50,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0px;
+  margin: 0rem;
+  outline-style: solid;
+  outline-width: 0.15rem;
+  outline-color: var(--color3);
 }
 
 header ul {
@@ -83,7 +86,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0px;
+  margin: 0.15rem;
 }
 
 .row {
@@ -92,7 +95,11 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0px;
+  margin: 0rem;
+  padding: 0.15rem;
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--color3);
 }
 
 .column {
@@ -137,6 +144,24 @@ padding: 10px;
 
 footer {
   background-color: var(--color1);
-  margin: 0px;
+  margin: 0rem;
   padding: 20px;
+  outline-style: solid;
+  outline-width: 0.15rem;
+  outline-color: var(--color3);
 }
+
+
+@media screen and (max-width: 650px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+
+  a {
+    outline-style: none;
+  }
+}
+
